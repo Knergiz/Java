@@ -1,32 +1,19 @@
 package homeworks;
 
-import java.util.Scanner;
+
+import java.util.Arrays;
+
 
 public class Test {
     public static void main(String[] args) {
-        /*
-        Scanner
 
-        next()              -> ONLY 1 word
-        nextLine()
-        nextInt()
-        nextDouble()
-         */
+        int[] array = {1, 2, 3};
+        String str = "Java is fun";
+        String str2 = "Java123 is%# fun";
 
-        Scanner scan = new Scanner(System.in);
-
-        System.out.println("Please enter your age");
-        int age = scan.nextInt();
-
-        System.out.println("The age entered is = " + age);
-
-        System.out.println("Please enter your name");
-        String name = scan.next();
-        System.out.println("The name entered is = " + name);
-
-        System.out.println("Enter an address!");
-        String address = scan.nextLine(); //Full line-row
-        System.out.println("The address entered is = " + address); // 2860 S River Rd
+        System.out.println(Arrays.deepToString(Homework20.numberAndSquare(array)));
+        System.out.println(Homework20.reverseSentence(str));
+        System.out.println(Homework20.removeStringSpecialsDigits(str2));
 
     }
 }
